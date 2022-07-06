@@ -1,0 +1,221 @@
+@charset 'utf-8';
+@import url(./reset.css);
+
+body > *{
+    border: 3px solid lightgray;
+}
+body{
+    max-width: 600px;
+    margin: auto;
+    color: #222;
+    background-color: rgb(255, 250, 243);
+}
+header{height: 8vh;}
+.main{height: 50vh;}
+.slide{height: 40vh;}
+.btn_con{height: 40vh}
+.review{height: 30vh;}
+.persona{height: 40vh;}
+.icon{height: 20vh;}
+footer{height: 15vh;}
+
+/* header영역 */
+header{
+    /* height: 30vh; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: white;
+}
+header h1{
+    width: 30%;
+}
+header .ham{
+    border: 1px solid red;
+    position: relative;
+    width: 10%;
+    height: 80%;
+}
+
+header .ham span{
+    display: block;
+    width: 40px;
+    height: 5px;
+    background-color: rgba(0,0,0,0.8);
+    border-radius: 25px;
+    position: absolute;
+}
+header .ham .line1{
+    top: 0;
+}
+header .ham .line2{
+    top: 50%;
+    transform: translatey(-50%);
+}
+header .ham .line3{
+    bottom: 0;
+}
+
+/* nav  start */
+.gnb * {
+    border: 1px solid red;
+}
+.gnb{
+    padding: 1rem;
+}
+.gnb strong{
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 1rem;
+}
+.gnb > div{
+    display: flex;
+    justify-content: space-around;
+}
+.gnb button{
+    width: calc(30%);
+    height: 30px;
+    border: 1px solid lightgray;
+    border-radius: 25px;
+    background-color: white;
+    margin: 1rem;
+}
+.gnb .depth1{}
+.gnb .depth1 li{
+
+}
+.gnb .depth1 li:hover{
+    color: #ff9138;
+}
+.gnb .depth1 li a{
+    display: flex;
+    padding: 1rem;
+    width: 100%;
+    height: 100%;
+}
+.gnb .depth2{ 
+    display: none;
+}
+.gnb .depth1 li:hover .depth2{
+    display: block;
+}
+.gnb .depth2 li{}
+.gnb .depth2 li a{}
+
+/* nav  end */
+
+/* main start */
+.main{
+    background-color: #ff9138;
+    background-image: url(../그래픽/02_img/bg_main.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    /* 배경이미지 투명도 조절?? */
+    position: relative;
+    padding: 1rem;
+}
+.main .main_con{
+    text-align: center;
+    line-height: 2rem;
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    top: 25%;
+    transform: translate(-50%, -25%);
+}
+.main .main_con h2{
+    font-size: 2rem;
+    font-weight: bold;
+}
+.main .btn1{
+    width: 40%;
+    height: 12%;
+    background-color: #06377b;
+    color: white;
+    font-size: 1.2rem;
+    /* font-weight: bold; */
+    border: none;
+    border-radius: 25px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+    position: absolute;
+    left: 50%;
+    bottom: 15%;
+    transform: translatex(-50%);
+}
+/* main end */
+
+/* slide start */
+.slide * {border: 1px solid red;}
+.slide{
+    position: relative;
+    /* display: flex; */
+    padding: 1rem;
+}
+.slide .slide_con{
+    /* left: 50%;
+    transform: translatex(-50%); */
+    border: 1px solid blue;
+    width: 300%;
+    display: flex;
+    justify-content: space-between;
+}
+/* 이미지 사이즈 조정 */
+.slide .slide_con li > *{
+    position: absolute;
+}
+.slide .slide_con li{
+    width: calc(100% / 3 - 1rem);
+    height: 100%;
+}
+.slide .slide_con li a{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+.slide img {
+    height: 100%;
+}
+.slide .slide_con li:nth-of-type(5)~ li{
+    display: none;
+}
+.slide .dot_con{
+    display: flex;
+    width: 30%;
+    justify-content: space-between;
+    bottom: 15%;
+}
+.slide span{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #222;
+    color: transparent;
+}
+/* slide end */
+
+/* btn_con start */
+/* btn_con end */
+
+/* banner start */
+.banner a{
+    border: 1px solid red;
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+.banner img{width: 100%;}
+/* banner end */
+
+/* review start */
+/* review end */
+
+/* persona start */
+/* persona end */
+
+/* icon start */
+/* icon end */
+
+/* footer */
